@@ -1,0 +1,77 @@
+body{
+	background-color: #f2f2f2;
+}
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=phone], select {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+ }
+  input[type=date], select {
+	width: 30%;
+	padding: 12px 20px;
+	margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+	  background-color: blue;
+	  color: white;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+}
+
+.myform {
+	background-color:white;
+	padding: 30px;
+	margin-left: 350px;
+	margin-right: 350px;
+	margin-bottom: 20px;
+	font-family: arial;
+	border-radius: 8px;
+}
+#submit {
+	margin-left: 350px;
+}
+#click {
+	margin-top: 20px;
+}
+.myform1 {
+	border-width: 10px 0px 0px 0px;
+	border-style: solid;
+	border-color: blue;
+	background-color: white;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	margin-left: 350px;
+	margin-right: 350px;
+	margin-bottom: 20px;
+	font-family: arial;
+	border-radius: 8px;
+}

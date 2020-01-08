@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script>
+			function validateForm() {
+  				var y = document.forms["form-group"]["email"].value;
+  				if (y == "") {
+    				alert("Email must be filled out");
+    					return false;
+  				}
+  				var x = document.forms["form-group"]["firstname"].value;
+  				if (x == "") {
+    				alert("First Name must be filled out");
+    					return false;	
+  				}
+  				var x = document.forms["form-group"]["lastname"].value;
+  				if (x == "") {
+    				alert("Last Name must be filled out");
+    					return false;	
+  				}
+  				var z = document.forms["form-group"]["phone"].value;
+  				if (z == "") {
+    				alert("Phonenumber must be filled out");
+    					return false;
+  				}
+  				// If z is Not a Number or less than zero
+				if (isNaN(z) || z < 0) {
+				    alert("Phone number not valid");
+				    	return false;
+				}
+			}			
+
+		</script>
+</head>
+<body>
+	<div>
+		<div class="myform1">
+			<h1>Untitled form</h1>
+			<p>Try to re-create this form</p>
+			<p style="color: red">* Required</p>
+		</div>
+
+			<form name="form-group" onsubmit="return validateForm()" method="post">
+				<div class="myform">
+					<label>Email address *</label> 
+					<input type="email" name="email" placeholder="Your email">
+					<br>
+				</div>
+
+				<div class="myform">
+					<label>First Name *</label>
+					<input type="text" name="firstname" placeholder="Your answer">
+					<br>
+				</div>
+
+				<div class="myform">
+					<label>Last Name *</label>
+					<input type="text" name="lastname" placeholder="Your answer">
+					<br>
+				</div>
+				
+				<div class="myform">	
+					<label>Gender</label><br>
+					<input type="radio" name="gender" value="male" id="click">Male<br>
+					<input type="radio" name="gender" value="female" id="click">Female<br>
+					<input type="radio" name="gender" value="other" id="click">Other:
+					<br>
+				</div>
+				
+				<div class="myform">	
+					<label>Phone Number *</label><br>
+					<input type="phone" name="phone" placeholder="Your answer" maxlength="11" minlength="11">
+					<br>
+				</div>
+				
+				<div class="myform">	
+					<label>Address</label>
+					<input type="text" name="address" placeholder="Your answer">
+					<br>
+				</div>	
+
+				<div class="myform">	
+					<label>Date Of Birth</label><br>
+					<input type="date" name="date" min="18">
+					<br>
+				</div>	
+
+				<div class="myform" id="click">	
+					<label>Mobile Device</label><br>
+					<input type="radio" name="device" value="samsung" id="click">Samsung<br>
+					<input type="radio" name="device" value="iphone" id="click">Iphone<br>
+					<input type="radio" name="device" value="huawei" id="click">Huawei<br>
+					<input type="radio" name="device" value="oppo" id="click">Oppo<br>
+					<input type="radio" name="device" value="vivo" id="click">Vivo
+					<br>
+				</div>	
+
+				<div class="myform">
+					<label>Occupation</label><br>
+					<input type="checkbox" name="occupation" value="student" id="click">Student<br>
+					<input type="checkbox" name="occupation" value="developer" id="click">Developer<br>
+					<input type="checkbox" name="occupation" value="accountant" id="click">Accountant<br>
+					<input type="checkbox" name="occupation" value="plumber" id="click">Plumber
+					<br>
+				</div>
+
+				<input type="submit" value="SUBMIT" id="submit">
+			</form>
+	</div>
+</body>
+</html>
